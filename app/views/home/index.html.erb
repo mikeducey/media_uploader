@@ -5,11 +5,11 @@
 <%= link_to "Upload a new video", :new_video %><br>
 
 <% @pictures.each do |element| %>
-	<img src="<%= element.photo %>"><br>
+	<img src="<%= element.media %>"><br>
 	<%= element.description %><br>
 <% end %>
 
 <% @videos.each do |element| %>
-  	<video controls="controls" src="<%=element.upload%>"></video><br>
+  	<video controls="controls" src="<%=element.media%>"></video><br>
     <%= element.description %><br>
 <% end %>

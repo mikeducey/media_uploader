@@ -1,6 +1,6 @@
 class HomeController < ApplicationController
 	def index
-		@pictures = Upload.all
+		@pictures = Photo.all
 		@videos = Video.all
 	end
 end

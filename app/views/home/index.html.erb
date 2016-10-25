@@ -2,7 +2,8 @@
 
 
 <%= link_to "Upload a new photo", :new_photo %><br>
-<%= link_to "Upload a new video", :new_video %><br>
+<%= link_to "Upload a new video", :new_video %><br><br>
+<%= link_to "Upload media of both kinds", :new_media %><br>
 
 <% @pictures.each do |element| %>
 	<img src="<%= element.media %>"><br>
